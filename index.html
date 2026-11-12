@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Docsify #2820 – relative include reproduction</title>
+  <link rel="stylesheet" href="./demo.css">
+  <script type="module" src="./demo.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Docsify #2820 · relative includes on two pages</h1>
+    <p>Both pages have byte-identical Markdown and include a different sibling <code>snippet.js</code>.</p>
+    <button id="run" type="button">Run first → second → first</button>
+    <p id="status" role="status">Run the same navigation in two fresh Docsify instances.</p>
+    <table>
+      <thead><tr><th>Visit</th><th>Expected</th><th>Develop <code>91c923a</code></th><th>PR #2820 <code>4ecc34e</code></th></tr></thead>
+      <tbody id="results"></tbody>
+    </table>
+    <div class="frames">
+      <section><h2>Develop</h2><iframe title="Develop output" id="before"></iframe></section>
+      <section><h2>PR #2820</h2><iframe title="PR output" id="after"></iframe></section>
+    </div>
+  </main>
+</body>
+</html>

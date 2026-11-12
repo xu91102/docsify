@@ -1,0 +1,7 @@
+{
+  "name": "docsify-2820-reproduction",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node serve.mjs" },
+  "stackblitz": { "startCommand": "npm start" }
+}

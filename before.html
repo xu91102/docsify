@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Docsify before</title></head>
+<body style="margin:12px;font:15px system-ui">
+  <div id="app">Loading Docsify…</div>
+  <script>
+    window.$docsify = {
+      basePath: new URL("./fixtures/", window.location.href).href,
+      plugins: [(hook, vm) => {
+        hook.doneEach(() => { document.documentElement.dataset.renderedRoute = vm.route.path; });
+      }],
+    };
+  </script>
+  <script src="./vendor/before.js"></script>
+</body>
+</html>
