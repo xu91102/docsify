@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    "repro": {
+      "name": "Docsify reproduction",
+      "command": "PORT=8000 npm start",
+      "runAtStart": true,
+      "preview": {
+        "port": 8000
+      }
+    }
+  }
+}

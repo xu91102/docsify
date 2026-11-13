@@ -9,6 +9,8 @@ const files = new Map([
   ["demo.js", "text/javascript"],
   ["vendor/before.js", "text/javascript"],
   ["vendor/after.js", "text/javascript"],
+  ["fixtures/before.html", "text/html"],
+  ["fixtures/after.html", "text/html"],
   ["fixtures/first/README.md", "text/plain"],
   ["fixtures/second/README.md", "text/plain"],
   ["fixtures/first/snippet.js", "text/javascript"],
